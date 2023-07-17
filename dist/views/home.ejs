@@ -1,0 +1,15 @@
+<%- include('particles/header.ejs') %>
+
+<%- include('particles/navigation.ejs') %>
+
+<h1>Cars</h1>
+
+<% for (let i = 0; i < cars.length; i++) { %>
+
+    <div class="section">
+            <h2 class="section__title"><%= cars[i].title %></h2>
+    </div>
+
+<% } %>
+
+<%- include('particles/footer.ejs') %>

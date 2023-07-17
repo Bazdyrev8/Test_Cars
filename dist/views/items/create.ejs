@@ -1,0 +1,24 @@
+<%- include('../particles/header.ejs') %>
+
+<%- include('../particles/navigation.ejs') %>
+
+<form action="/station_carsCreate" method="post">
+    <select name="carId" class="center">
+        <% for (let i=0; i < cars.length; i++) { %>
+            <option value="<%= cars[i].id %>" class="option-categ">
+                <%= cars[i].title %>
+            </option>
+            <% } %>
+    </select>
+    <select name="stateId" class="center">
+        <% for (let i=0; i < station.length; i++) { %>
+            <option value="<%= station[i].id %>" class="option-categ">
+                <%= station[i].title %>
+            </option>
+            <% } %>
+    </select>
+    <button class="button button-block" type="submit" value="AddtoFavorites">Добавить в избранное</button>
+</form>
+
+
+<%- include('../particles/footer.ejs') %>
