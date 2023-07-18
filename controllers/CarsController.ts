@@ -59,8 +59,8 @@ export class ItemsController {
                 for (let i = 0; i < station.length; i++) {
                     console.log("Station:" + String(station[i].title));
                 }
-            }else{
-                console.log("Station: Нет" );
+            } else {
+                console.log("Station: Нет");
             }
             console.log("----------");
         }
